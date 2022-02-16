@@ -1,0 +1,29 @@
+.topcategories__content {
+    margin-top: 50px;
+    .text__categories {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.33em;
+        margin-bottom: 8px;
+    }
+    .topcategories__table {
+        .size__icons__categories {
+            font-size: 30px;
+        }
+        .text__icons__categories {
+            height: 32px;
+            line-height: 32px;
+            padding-left: 10px;
+            a {
+                text-decoration: none;
+                color: $color-black-0;
+            }
+        }
+        .sizetable {
+            border: 1px solid $color-gray-3;
+            padding: 15px;
+            margin: 10px 10px;
+            box-shadow: 1px 3px $color-gray-3;
+        }
+    }
+}

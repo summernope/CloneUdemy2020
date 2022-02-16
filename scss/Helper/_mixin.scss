@@ -1,0 +1,25 @@
+@mixin styleText($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin styleButton($color, $bg-color, $fw, $bg-color-hover) {
+    color: $color;
+    background-color: $bg-color;
+    font-weight: $fw;
+    border: 1px solid $color;
+    font-size: 15px;
+    &:hover {
+        background-color: $bg-color-hover;
+    }
+}
+
+@mixin responsive($screen) {
+    @if(map-has-key($breakpoints, $screen)) {
+        $value: map-get($breakpoints, $screen);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+}

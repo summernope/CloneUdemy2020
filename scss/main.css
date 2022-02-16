@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #29303b; }
+
+.owl-prev {
+  position: absolute;
+  top: 33%;
+  left: -4%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+  background-color: #fff !important;
+  z-index: 100; }
+  .owl-prev span {
+    font-size: 40px;
+    font-weight: normal;
+    color: #007791;
+    line-height: 0.6; }
+  .owl-prev:focus {
+    outline: none; }
+
+.owl-next {
+  position: absolute;
+  top: 33%;
+  right: -4%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+  background-color: #fff !important;
+  z-index: 100; }
+  .owl-next span {
+    font-size: 40px;
+    font-weight: normal;
+    color: #007791;
+    line-height: 0.6; }
+  .owl-next:focus {
+    outline: none; }
+
+.btn--white {
+  color: #686f7a;
+  background-color: #fff;
+  font-weight: 600;
+  border: 1px solid #686f7a;
+  font-size: 15px; }
+  .btn--white:hover {
+    background-color: rgba(20, 23, 28, 0.05); }
+
+.btn--red {
+  color: #fff;
+  background-color: #ec5252;
+  font-weight: 600;
+  border: 1px solid #fff;
+  font-size: 15px; }
+  .btn--red:hover {
+    background-color: #521822; }
+
+.myNavBar {
+  border-bottom: 1px solid #cacbcc; }
+  .myNavBar .navbar-brand {
+    flex-grow: 1; }
+    .myNavBar .navbar-brand img {
+      width: 110px; }
+  .myNavBar .categories {
+    flex-grow: 1;
+    font-size: 13px;
+    font-weight: normal;
+    color: #505763;
+    align-self: center; }
+  .myNavBar .input_search {
+    flex-grow: 5; }
+    .myNavBar .input_search .form-control {
+      background-color: rgba(20, 23, 28, 0.05);
+      border: none;
+      transition: none; }
+      .myNavBar .input_search .form-control:focus {
+        box-shadow: none;
+        background-color: #fff;
+        border-top: 1px solid #cacbcc;
+        border-bottom: 1px solid #cacbcc;
+        border-left: 1px solid #cacbcc; }
+      .myNavBar .input_search .form-control:focus + .input-group-prepend .input-group-text {
+        color: #ec5252;
+        background-color: #fff;
+        border-top: 1px solid #cacbcc;
+        border-bottom: 1px solid #cacbcc;
+        border-right: 1px solid #cacbcc; }
+      .myNavBar .input_search .form-control:focus + .input-group-prepend:hover .input-group-text {
+        color: #fff;
+        background-color: #ec5252; }
+    .myNavBar .input_search .input-group-prepend .input-group-text {
+      background-color: rgba(20, 23, 28, 0.05);
+      color: #ec5252;
+      border: none; }
+  .myNavBar .navbar-nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+    .myNavBar .navbar-nav .nav-item .nav-link {
+      font-size: 13px;
+      font-weight: normal;
+      color: #505763;
+      padding: 10px 20px; }
+    .myNavBar .navbar-nav .nav-item:hover {
+      background-color: rgba(20, 23, 28, 0.05); }
+    .myNavBar .navbar-nav .nav-item .nav-link:nth-child(3) {
+      border-radius: 50%; }
+    .myNavBar .navbar-nav .nav-item:nth-child(2) {
+      border-right: 2px solid rgba(20, 23, 28, 0.05); }
+    .myNavBar .navbar-nav .nav-item:nth-child(3) {
+      border-radius: 50%; }
+
+.myCover {
+  background-image: url("../../img/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; }
+  .myCover .cover__content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%; }
+    .myCover .cover__content h1 {
+      font-size: 40px;
+      font-weight: bold;
+      color: #fff; }
+    .myCover .cover__content p {
+      font-size: 20px;
+      font-weight: normal;
+      color: #fff; }
+    .myCover .cover__content .input .form-control {
+      padding: 10px;
+      border-right: none; }
+      .myCover .cover__content .input .form-control::placeholder {
+        font-size: 20px;
+        font-weight: normal;
+        color: #a1a7b3; }
+      .myCover .cover__content .input .form-control:focus {
+        box-shadow: none; }
+    .myCover .cover__content .input .input-group-prepend .input-group-text {
+      background-color: #fff;
+      color: #ec5252;
+      border: none; }
+    .myCover .cover__content .input .input-group-prepend:hover .input-group-text {
+      background-color: #ec5252;
+      color: #fff; }
+
+.myIntro {
+  background: linear-gradient(to right, #521822, #ec5252); }
+  .myIntro .intro__content {
+    width: 80%;
+    margin: auto;
+    padding: 20px; }
+  .myIntro .intro__items .icons {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 25px; }
+  .myIntro .intro__items .icons__content {
+    padding-top: 10px; }
+    .myIntro .intro__items .icons__content p:first-child {
+      font-size: 17px;
+      font-weight: bold;
+      color: #fff; }
+    .myIntro .intro__items .icons__content p:last-child {
+      font-size: 15px;
+      font-weight: normal;
+      color: #fff; }
+
+.myStudents {
+  margin-top: 25px;
+  position: relative; }
+  .myStudents .students__content {
+    width: 80%;
+    margin: auto; }
+    .myStudents .students__content .students__courses .card-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #29303b; }
+    .myStudents .students__content .students__courses .card-text {
+      font-size: 13px;
+      font-weight: normal;
+      color: #686f7a; }
+    .myStudents .students__content .students__courses .rating {
+      display: flex; }
+      .myStudents .students__content .students__courses .rating .rating__star {
+        font-size: 13px;
+        font-weight: normal;
+        color: #F4C150; }
+      .myStudents .students__content .students__courses .rating span:nth-child(2) {
+        font-size: 13px;
+        font-weight: bold;
+        color: #686f7a;
+        margin-right: 2px; }
+      .myStudents .students__content .students__courses .rating span:last-child {
+        font-size: 13px;
+        font-weight: normal;
+        color: #686f7a; }
+    .myStudents .students__content .students__courses .price {
+      text-align: right; }
+      .myStudents .students__content .students__courses .price .old-price {
+        font-size: 13px;
+        font-weight: normal;
+        color: #686f7a;
+        text-decoration: line-through; }
+      .myStudents .students__content .students__courses .price .new-price {
+        font-size: 15px;
+        font-weight: bold;
+        color: #29303b; }
+
+.myCourses {
+  margin-top: 25px; }
+  .myCourses .courses__content {
+    width: 80%;
+    margin: auto; }
+    .myCourses .courses__content .courses__intro {
+      padding-top: 4rem; }
+      .myCourses .courses__content .courses__intro h2 {
+        font-size: 40px -4;
+        font-weight: normal;
+        color: #29303b; }
+    .myCourses .courses__content .myTab .nav {
+      justify-content: space-between;
+      border: none; }
+      .myCourses .courses__content .myTab .nav .nav-item:hover .nav-link {
+        border: none; }
+      .myCourses .courses__content .myTab .nav .nav-item .nav-link.active {
+        border: none;
+        border-bottom: 5px solid #007791; }
+      .myCourses .courses__content .myTab .nav .nav-item .nav-link {
+        border: none;
+        font-size: 15px;
+        font-weight: normal;
+        color: #29303b; }
+    .myCourses .courses__content .myTab .tab-content {
+      margin-top: 25px;
+      position: relative; }
+      .myCourses .courses__content .myTab .tab-content .card-title {
+        font-size: 15px;
+        font-weight: bold;
+        color: #29303b; }
+      .myCourses .courses__content .myTab .tab-content .card-text {
+        font-size: 13px;
+        font-weight: normal;
+        color: #686f7a; }
+      .myCourses .courses__content .myTab .tab-content .rating {
+        display: flex; }
+        .myCourses .courses__content .myTab .tab-content .rating .rating__star {
+          font-size: 13px;
+          font-weight: normal;
+          color: #F4C150; }
+        .myCourses .courses__content .myTab .tab-content .rating span:nth-child(2) {
+          font-size: 13px;
+          font-weight: bold;
+          color: #686f7a;
+          margin-right: 2px; }
+        .myCourses .courses__content .myTab .tab-content .rating span:last-child {
+          font-size: 13px;
+          font-weight: normal;
+          color: #686f7a; }
+      .myCourses .courses__content .myTab .tab-content .price {
+        text-align: right; }
+        .myCourses .courses__content .myTab .tab-content .price .old-price {
+          font-size: 13px;
+          font-weight: normal;
+          color: #686f7a;
+          text-decoration: line-through; }
+        .myCourses .courses__content .myTab .tab-content .price .new-price {
+          font-size: 15px;
+          font-weight: bold;
+          color: #29303b; }
+
+.recommendations__content__top {
+  background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%);
+  height: 20px;
+  margin-top: 20px; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+.feedback__content {
+    margin-top: 20px;
+    .text__feedback {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.33em;
+        margin-bottom: 8px;
+    }
+    .feedback__member {
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        .text_card {
+            align-self: center;
+        }
+        .card-body {
+            border: 1px solid rgba(0, 0, 0, .125);
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 1px 3px 0 rgba(20, 23, 28, .15);
+            height: 100%;
+            padding: 32px;
+        }
+    }
+}

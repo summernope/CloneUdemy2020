@@ -1,0 +1,137 @@
+// .header__left {
+//     display: flex;
+//     align-items: center;
+//     .navbar-brand {
+//         flex-grow: 1;
+//         img {
+//             width: 110px;
+//         }
+//     }
+//     .header__categories {
+//         flex-grow: 1;
+//         @include styleText($fs-1, $fw-normal, $color-black-light);
+//     }
+//     .searchform {
+//         flex-grow: 5;
+//     }
+//     .input-group {
+//         background-color: $color-white-cream;
+//         color: $color-black-0;
+//         border: 1px solid $color-white-cream;
+//         .form-control {
+//             background-color: transparent;
+//             border: transparent;
+//             &:focus {
+//                 box-shadow: none;
+//                 border: $color-gray-6;
+//                 background-color: $color-white-0;
+//                 border-right: transparent;
+//                 &+.input-group-append {
+//                     .input-group-text {
+//                         border: $color-gray-6;
+//                         background-color: $color-white-0;
+//                         border-left: transparent;
+//                     }
+//                 }
+//             }
+//         }
+//         .input-group-text {
+//             background-color: transparent;
+//             border: transparent;
+//             border-radius: none;
+//             &:hover {
+//                 background-color: $color-red-0;
+//                 color: $color-white-0;
+//                 border: $color-red-0;
+//             }
+//         }
+//     }
+// }
+// .header__right {
+//     .navbar-nav {
+//         .nav-item {
+//             .nav-link {
+//                 @include styleText($fs-1, $fw-normal, $color-black-light);
+//             }
+//         }
+//     }
+//     @include responsive('large') {
+//         .header__business .header__teach {
+//             display: none;
+//         }
+//     }
+// }
+.myNavBar {
+    border-bottom: 1px solid $color-gray-3;
+    .navbar-brand {
+        flex-grow: 1;
+        img {
+            width: 110px;
+        }
+    }
+    .categories {
+        flex-grow: 1;
+        @include styleText($fs-1, $fw-normal, $color-black-light);
+        align-self: center;
+    }
+    .input_search {
+        flex-grow: 5;
+        .form-control {
+            background-color: $color-gray-1;
+            border: none;
+            transition: none;
+            &:focus {
+                box-shadow: none;
+                background-color: $color-white-0;
+                border-top: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+                border-left: 1px solid $color-gray-3;
+            }
+            &:focus+.input-group-prepend {
+                .input-group-text {
+                    color: $color-red-0;
+                    background-color: $color-white-0;
+                    border-top: 1px solid $color-gray-3;
+                    border-bottom: 1px solid $color-gray-3;
+                    border-right: 1px solid $color-gray-3;
+                }
+                &:hover {
+                    .input-group-text {
+                        color: $color-white-0;
+                        background-color: $color-red-0;
+                    }
+                }
+            }
+        }
+        .input-group-prepend {
+            .input-group-text {
+                background-color: $color-gray-1;
+                color: $color-red-0;
+                border: none;
+            }
+        }
+    }
+    .navbar-nav {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .nav-item {
+            .nav-link {
+                @include styleText($fs-1, $fw-normal, $color-black-light);
+                padding: $pd-1 $pd-2;
+            }
+            &:hover {
+                background-color: $color-gray-1;
+            }
+            .nav-link:nth-child(3) {
+                border-radius: 50%;
+            }
+        }
+        .nav-item:nth-child(2) {
+            border-right: 2px solid $color-gray-1;
+        }
+        .nav-item:nth-child(3) {
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.udemy__footer {
+    .udemy__footer__content {
+        margin: 20px;
+    }
+    .udemy__footer_left {
+        img {
+            width: 110px;
+        }
+        span {
+            margin-left: 20px;
+        }
+    }
+    .udemy__footer_right {
+        justify-content: center;
+        align-self: center;
+        ul {
+            list-style-type: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $color-black-0;
+                transition: 0.5s all;
+            }
+        }
+    }
+}
+
+.Border__udemy__footer {
+    padding: 20px;
+    border-bottom: 6px solid $color-red-0;
+}

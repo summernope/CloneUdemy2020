@@ -1,0 +1,50 @@
+.companies {
+    background-color: $color-gray-6;
+    border-bottom: 1px solid $color-gray-3;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    padding-top: 10px;
+    .company__contentbutton {
+        a {
+            text-decoration: none;
+            color: $color-black-0;
+        }
+        .text__companybutton {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .button_companybutton {
+            color: #fff;
+        }
+        .rightright {
+            justify-content: center;
+            align-self: center;
+            border-right: 1px solid $color-gray-3;
+        }
+        .leftleft {
+            justify-content: center;
+            align-self: center;
+            border-left: 1px solid $color-gray-3;
+        }
+    }
+    .texttext {
+        color: #686f7a;
+        font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        padding-top: 16px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .company__content {
+        .company__logo {
+            justify-content: center;
+            align-self: center;
+            img {
+                padding: 20px 20px;
+            }
+        }
+    }
+}
